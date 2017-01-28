@@ -15,17 +15,60 @@
     base_dirs:
       - /dev/block/platform/msm_sdcc.1/by-name
     system:
+       -/dev/block/bootdevice/by-name/system
       - /dev/block/platform/msm_sdcc.1/by-name/system
       - /dev/block/mmcblk0p21
     cache:
+      - /dev/block/bootdevice/by-name/cache
       - /dev/block/platform/msm_sdcc.1/by-name/cache
       - /dev/block/mmcblk0p23
     data:
+      - /dev/block/bootdevice/by-name/userdata
       - /dev/block/platform/msm_sdcc.1/by-name/userdata
       - /dev/block/mmcblk0p26
     boot:
+      - /dev/block/bootdevice/by-name/boot
       - /dev/block/platform/msm_sdcc.1/by-name/boot
       - /dev/block/mmcblk0p18
     recovery:
+      - /dev/block/bootdevice/by-name/recovery
       - /dev/block/platform/msm_sdcc.1/by-name/recovery
-- /dev/block/mmcblk0p19
+      - /dev/block/mmcblk0p19
+
+
+- name: Zte Redbull V5
+  id: X9180
+  codenames:
+    - X9180
+    - U9180
+    - N9180
+    - V9180
+    - x9180
+    - u9180
+    - n9180
+    - v9180
+  architecture: armeabi-v7a
+
+   block_devs:
+    base_dirs:
+      - /dev/block/platform/msm_sdcc.1/by-name
+    system:
+       -/dev/block/bootdevice/by-name/system
+      - /dev/block/platform/msm_sdcc.1/by-name/system
+      - /dev/block/mmcblk0p21
+    cache:
+      - /dev/block/bootdevice/by-name/cache
+      - /dev/block/platform/msm_sdcc.1/by-name/cache
+      - /dev/block/mmcblk0p23
+    data:
+      - /dev/block/bootdevice/by-name/userdata
+      - /dev/block/platform/msm_sdcc.1/by-name/userdata
+      - /dev/block/mmcblk0p26
+    boot:
+      - /dev/block/bootdevice/by-name/boot
+      - /dev/block/platform/msm_sdcc.1/by-name/boot
+      - /dev/block/mmcblk0p18
+    recovery:
+      - /dev/block/bootdevice/by-name/recovery
+      - /dev/block/platform/msm_sdcc.1/by-name/recovery
+      - /dev/block/mmcblk0p19
