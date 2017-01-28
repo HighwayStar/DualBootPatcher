@@ -1,0 +1,31 @@
+- name: Zte Nubia Z5S Mini
+  id: NX404H
+  codenames:
+    - NX404H
+    - NX405H
+    - NX404J
+    - NX405J
+    - nx404h
+    - nx405h
+    - nx404j
+    - nx405j
+  architecture: armeabi-v7a
+
+  block_devs:
+    base_dirs:
+      - /dev/block/platform/msm_sdcc.1/by-name
+    system:
+      - /dev/block/platform/msm_sdcc.1/by-name/system
+      - /dev/block/mmcblk0p21
+    cache:
+      - /dev/block/platform/msm_sdcc.1/by-name/cache
+      - /dev/block/mmcblk0p23
+    data:
+      - /dev/block/platform/msm_sdcc.1/by-name/userdata
+      - /dev/block/mmcblk0p26
+    boot:
+      - /dev/block/platform/msm_sdcc.1/by-name/boot
+      - /dev/block/mmcblk0p18
+    recovery:
+      - /dev/block/platform/msm_sdcc.1/by-name/recovery
+- /dev/block/mmcblk0p19
